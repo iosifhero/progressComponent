@@ -16,5 +16,7 @@
 
 Вы можете использовать компонент в вашем проекте, добавив следующий код в HTML:
 
-"<progress-component value=""></progress-component>"
-"<script src="./js/progressBar.js"></script>"
+<progress-component></progress-component>
+<script src="./js/progressBar.js"></script>
+
+В компонент можно передавать атрибут value для отслеживания прогресса чего-либо
