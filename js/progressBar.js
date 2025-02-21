@@ -10,17 +10,15 @@ class ProgressComponent extends HTMLElement {
               padding: 20px;
             }
             .wrapper {
-              display: grid;
-              grid-template-columns: 1fr 1fr;
-              align-items: center;
-              justify-items: center;
+              display: flex;
               gap: 20px;
-              width: 100%;
-              max-width: 500px;
-              margin: auto;
+              flex-wrap: wrap;
+              align-items: center;
+              align-content: center;
+              justify-content: center;
             }
             .wrapper.hide-progress .progress-container {
-              display: none;
+              visibility: hidden;
             }
             .wrapper.hide-progress .controls-container {
               grid-column: 1 / span 2;
@@ -110,11 +108,11 @@ class ProgressComponent extends HTMLElement {
               from { transform: rotate(0deg); }
               to { transform: rotate(360deg); }
             }
-            @media (max-width: 480px) {
-              .progress-container {
-                width: 100px;
-                height: 100px;
-              }
+            // @media (max-width: 480px) {
+            //   .progress-container {
+            //     width: 100px;
+            //     height: 100px;
+            //   }
               .progress-ring__background,
               .progress-ring__progress {
                 stroke-width: 8;
